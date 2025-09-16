@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LITS AI & Data Science Symposium 2025</title>
+    <meta name="description" content="Join the Loyola Institute of Technology & Science Department of AI & Data Science Symposium - featuring cutting-edge technical events, expert speakers, and innovation showcase.">
+    <meta name="keywords" content="AI, Data Science, Symposium, LITS, Technology, Machine Learning, Innovation">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="LITS AI & Data Science Symposium 2025">
+    <meta property="og:description" content="Join the Loyola Institute of Technology & Science Department of AI & Data Science Symposium">
+    
+    <!-- Twitter -->
+    <meta name="twitter:title" content="LITS AI & Data Science Symposium 2025">
+    <meta name="twitter:description" content="Join the Loyola Institute of Technology & Science Department of AI & Data Science Symposium">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --neon-red: #ff073a;
+            --neon-white: #ffffff;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    @layer base {
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: #000000;
+            color: #ffffff;
+            font-family: 'Inter', system-ui, sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .glow-red {
+            box-shadow: 0 0 20px rgba(255, 7, 58, 0.5);
+        }
+        
+        .glow-white {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 10px currentColor;
+        }
+    }
+
+    @layer components {
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+        }
+        
+        .neon-button {
+            background: transparent;
+            border: 2px solid var(--neon-red);
+            color: var(--neon-red);
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .neon-button:hover {
+            background: var(--neon-red);
+            color: #000000;
+            box-shadow: 0 0 25px rgba(255, 7, 58, 0.6);
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--neon-red);
+            border-radius: 50%;
+            opacity: 0.8;
+        }
+        
+        .event-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+    }
+
+    @layer utilities {
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .animate-pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 5px rgba(255, 7, 58, 0.5); }
+            100% { box-shadow: 0 0 20px rgba(255, 7, 58, 0.8); }
+        }
+        
+        .bg-animated {
+            background: linear-gradient(-45deg, #000000, #1a0006, #000000, #0a0002);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/ParticleBackground.js"></script>
+    <script type="text/babel" src="components/Navigation.js"></script>
+    <script type="text/babel" src="components/HeroSection.js"></script>
+    <script type="text/babel" src="components/AboutSection.js"></script>
+    <script type="text/babel" src="components/EventsSection.js"></script>
+    <script type="text/babel" src="components/ScheduleSection.js"></script>
+    <script type="text/babel" src="components/SpeakersSection.js"></script>
+    <script type="text/babel" src="components/CoordinatorsSection.js"></script>
+    <script type="text/babel" src="components/ContactSection.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
