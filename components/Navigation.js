@@ -79,10 +79,9 @@ function Navigation() {
               </button>
             ))}
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeqUt5crxQgY6GHppCDl-Fgnw06wwfyb6xBp1rR9HO-YM48jg/alreadyresponded" 
+              href="https://forms.google.com/demo-registration-form" 
               target="_blank" 
               rel="noopener noreferrer"
-
               className="neon-button w-full mt-4 inline-block text-center"
             >
               Register
