@@ -27,7 +27,7 @@ function SpeakersSection() {
       role: 'Head - HR & Operations ',
       company: 'Verinite Technologies',
       image: 'https://res.cloudinary.com/dk7bsn6ka/image/upload/v1758118179/WhatsApp_Image_2025-09-17_at_19.09.26_19d9fca3_d3jrj4.jpg',
-      bio: 'Ms. A. Julie Krubhavathi, SPHRi™, a seasoned HR leader with 15+ years of global experience, has worked with top organizations like Pfizer, Emerson, and EC Group Datasoft. Currently, as Head – HR & Operations at Verinite Technologies, she drives growth through transformative HR strategies, digital initiatives, and a focus on culture and employee well-being. A certified SPHRi™, Lean Six Sigma Green Belt, Life Coach, and POSH Consultant, Julie is also a passionate mentor and speaker, impacting 10,000+ professionals through over 90 sessions. Recognized with awards like the Power Seminar Award 2022, she is the founding member of “HR Lens”.',
+      bio: 'ulie Krubhavathi, SPHRi™, is a seasoned HR leader with 15+ years of global experience, having worked with top companies like Pfizer, Emerson, and EC Group Datasoft. Currently the Head of HR & Operations at Verinite Technologies, she drives transformative HR strategies focused on growth, culture, and employee well-being. A certified SPHRi™, Lean Six Sigma Green Belt, Life Coach, and POSH Consultant, Julie is also a sought-after speaker and mentor, impacting over 10,000 professionals through 90+ sessions. She was honored with the Power Seminar Award 2022 and is a founding member of “HR Lens.'
       linkedin: 'https://linkedin.com/in/sarah-chen-ai',
       talk: 'The Future of AI '
     }
