@@ -27,9 +27,9 @@ function ScheduleSection() {
       { time: '10:30 AM', event: 'AI Hackathon Begins', type: 'technical' },
       { time: '10:45 AM', event: 'Keynote: Future of AI', type: 'keynote' },
       { time: '11:00 AM', event: 'Paper Trails', type: 'technical' },
-      { time: '12:00 PM', event: 'Debug code', type: 'technical' },
+      { time: '12:00 PM', event: 'Quizathon', type: 'technical' },
       { time: '1:00 PM', event: 'Lunch Break', type: 'break' },
-      { time: '2:00 PM', event: 'guess the song', type: 'non-technical' },
+      { time: '2:00 PM', event: 'Melody Quest ', type: 'non-technical' },
       { time: '3:00 PM', event: 'prize announcement ', type: 'discussion' },
       { time: '4:00 PM', event: 'clossing ceremony ', type: 'farewell' }
     ],
