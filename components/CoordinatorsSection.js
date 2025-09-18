@@ -25,8 +25,8 @@ function CoordinatorsSection() {
       { name: 'Mrs. Haseenath Jaseela ', phone: '+91 9442049657', email: 'haseenathjaseela@lits.edu.in' }
     ],
     students: [
-      { name: 'Kishore Kumar', phone: '+91 7397638429', email: 'kishorekumar@student.lits.edu.in' },
-      { name: 'Shakthi', phone: '+91 8220075290', email: 'shakthi@student.lits.edu.in' }
+      { name: 'Mr. Kishore Kumar', phone: '+91 7397638429', email: 'kishorekumar@student.lits.edu.in' },
+      { name: 'Ms. Siva Sakthi', phone: '+91 8220075290', email: 'shakthi@student.lits.edu.in' }
 
     ]
 
