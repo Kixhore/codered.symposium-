@@ -14,10 +14,9 @@ function HeroSection() {
               src="https://res.cloudinary.com/dk7bsn6ka/image/upload/v1758387143/IMG-20250908-WA0002_1_omk034.png" 
               alt="LITS AI & Data Science Symposium 2025" 
               className="max-w-lg w-full h-auto transform hover:scale-105 transition-transform duration-500"
-
             />
-            <h1 className="text-4xl md:text-6xl font-bold mt-6 text-glow">
-              <span className="text-[var(--neon-red)]">Symposium</span>
+            <h1 className="text-2xl md:text-4xl font-bold mt-6 text-glow italic">
+              <span className="text-[var(--neon-red)]">Silence will be the last algorithm</span>
             </h1>
           </div>
           
@@ -28,8 +27,7 @@ function HeroSection() {
 
 
           <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Join us for an extraordinary journey into the future of Artificial Intelligence and Data Science. 
-            Experience cutting-edge research, innovative solutions, and networking opportunities.
+            Welcome to CODERED 2025 – the premier National Level Technical Symposium organized by the Department of Artificial Intelligence & Data Science, Loyola Institute of Technology and Science
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
