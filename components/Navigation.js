@@ -25,7 +25,7 @@ function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <img 
-              src="https://res.cloudinary.com/dk7bsn6ka/image/upload/v1755193135/1_lppjjq.png" 
+              src="https://res.cloudinary.com/dk7bsn6ka/image/upload/v1758386392/IMG-20250908-WA0002_1_xjlltm.png" 
               alt="LITS Symposium Logo" 
               className="h-10 w-auto"
             />
