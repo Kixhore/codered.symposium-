@@ -9,14 +9,17 @@ function HeroSection() {
     <section id="hero" className="min-h-screen flex items-center justify-center relative z-10 pt-16" data-name="hero-section" data-file="components/HeroSection.js">
       <div className="text-center max-w-4xl mx-auto px-4">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-glow">
-            <span className="text-[var(--neon-red)]">LITES</span>
-            <br />
-            <span className="text-white">AI & Data Science</span>
+          <div className="mb-8 flex flex-col items-center">
+            <img 
+              src="https://res.cloudinary.com/dk7bsn6ka/image/upload/v1758387143/IMG-20250908-WA0002_1_omk034.png" 
+              alt="LITS AI & Data Science Symposium 2025" 
+              className="max-w-lg w-full h-auto transform hover:scale-105 transition-transform duration-500"
 
-            <br />
-            <span className="text-[var(--neon-red)]">Symposium</span>
-          </h1>
+            />
+            <h1 className="text-4xl md:text-6xl font-bold mt-6 text-glow">
+              <span className="text-[var(--neon-red)]">Symposium</span>
+            </h1>
+          </div>
           
           <div className="text-xl md:text-2xl text-gray-300 mb-4">
             October 13, 2025
@@ -25,7 +28,8 @@ function HeroSection() {
 
 
           <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Silence will be the last algorithm
+            Join us for an extraordinary journey into the future of Artificial Intelligence and Data Science. 
+            Experience cutting-edge research, innovative solutions, and networking opportunities.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
