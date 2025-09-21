@@ -26,7 +26,7 @@ function Footer() {
               <h4 className="text-white font-semibold mb-4">Contact</h4>
               <div className="space-y-2 text-sm text-gray-300">
                 <p>homizzad@gmail.com</p>
-                <p>+91 98765 43210</p>
+                <p>+91 9442463994</p>
                 <p>Kanyakumari, Tamil Nadu, India</p>
               </div>
             </div>
