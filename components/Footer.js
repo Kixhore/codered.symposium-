@@ -25,7 +25,7 @@ function Footer() {
             <div>
               <h4 className="text-white font-semibold mb-4">Contact</h4>
               <div className="space-y-2 text-sm text-gray-300">
-                <p>symposium@lits.edu.in</p>
+                <p>homizzad@gmail.com</p>
                 <p>+91 98765 43210</p>
                 <p>Kanyakumari, Tamil Nadu, India</p>
               </div>
