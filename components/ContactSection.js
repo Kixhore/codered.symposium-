@@ -61,7 +61,7 @@ function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold">Email</h4>
-                    <p className="text-gray-300">symposium@lits.edu.in</p>
+                    <p className="text-gray-300">homizzad@gmail.com</p>
                   </div>
                 </div>
 
