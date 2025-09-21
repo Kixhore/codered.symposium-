@@ -15,10 +15,12 @@ function HeroSection() {
               alt="LITS AI & Data Science Symposium 2025" 
               className="max-w-lg w-full h-auto transform hover:scale-105 transition-transform duration-500"
             />
-            <h1 className="text-2xl md:text-4xl font-bold mt-6 text-glow" style={{fontFamily: 'Economica, sans-serif'}}>
-              <span className="text-[var(--neon-red)]">Silence will be the last algorithm</span>
+            <h1 className="text-2xl md:text-4xl font-bold mt-6 text-glow font-economica leading-tight">
+              <span className="text-[#f0f2f1]">Silence will be the </span>{' '}
+              <span className="text-[#d90406]"> last algorithm</span>
             </h1>
           </div>
+
 
 
           <div className="text-xl md:text-2xl text-gray-300 mb-4">
