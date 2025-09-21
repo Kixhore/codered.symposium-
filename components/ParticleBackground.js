@@ -1,6 +1,6 @@
 function ParticleBackground() {
   const canvasRef = React.useRef(null);
-  const particlesRef = React.useRef([]);
+  const digitsRef = React.useRef([]);
   const animationRef = React.useRef(null);
 
   React.useEffect(() => {
@@ -15,56 +15,46 @@ function ParticleBackground() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Initialize particles
-    const particleCount = 50;
-    particlesRef.current = [];
+    // Initialize falling binary digits
+    const digitCount = 40;
+    digitsRef.current = [];
     
-    for (let i = 0; i < particleCount; i++) {
-      particlesRef.current.push({
+    for (let i = 0; i < digitCount; i++) {
+      digitsRef.current.push({
         x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 2 + 1,
-        opacity: Math.random() * 0.5 + 0.3
+        y: Math.random() * canvas.height - canvas.height,
+        speed: Math.random() * 2 + 1,
+        digit: Math.random() > 0.5 ? '1' : '0',
+        opacity: Math.random() * 0.6 + 0.3,
+        fontSize: Math.random() * 8 + 12
       });
     }
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
-      // Update and draw particles
-      particlesRef.current.forEach((particle, i) => {
-        particle.x += particle.vx;
-        particle.y += particle.vy;
+      // Update and draw falling digits
+      digitsRef.current.forEach((digit) => {
+        digit.y += digit.speed;
         
-        // Wrap around edges
-        if (particle.x < 0) particle.x = canvas.width;
-        if (particle.x > canvas.width) particle.x = 0;
-        if (particle.y < 0) particle.y = canvas.height;
-        if (particle.y > canvas.height) particle.y = 0;
+        // Reset digit when it goes off screen
+        if (digit.y > canvas.height + 50) {
+          digit.y = -50;
+          digit.x = Math.random() * canvas.width;
+          digit.digit = Math.random() > 0.5 ? '1' : '0';
+        }
         
-        // Draw particle
-        ctx.beginPath();
-        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 7, 58, ${particle.opacity})`;
-        ctx.fill();
+        // Draw digit
+        ctx.font = `${digit.fontSize}px 'Courier New', monospace`;
+        ctx.fillStyle = `rgba(255, 7, 58, ${digit.opacity})`;
+        ctx.textAlign = 'center';
+        ctx.fillText(digit.digit, digit.x, digit.y);
         
-        // Draw connections
-        particlesRef.current.slice(i + 1).forEach(otherParticle => {
-          const dx = particle.x - otherParticle.x;
-          const dy = particle.y - otherParticle.y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-          
-          if (distance < 100) {
-            ctx.beginPath();
-            ctx.moveTo(particle.x, particle.y);
-            ctx.lineTo(otherParticle.x, otherParticle.y);
-            ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 * (1 - distance / 100)})`;
-            ctx.lineWidth = 0.5;
-            ctx.stroke();
-          }
-        });
+        // Add subtle glow effect
+        ctx.shadowColor = 'rgba(255, 7, 58, 0.3)';
+        ctx.shadowBlur = 5;
+        ctx.fillText(digit.digit, digit.x, digit.y);
+        ctx.shadowBlur = 0;
       });
       
       animationRef.current = requestAnimationFrame(animate);
@@ -84,7 +74,7 @@ function ParticleBackground() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-0"
-      data-name="particle-background"
+      data-name="binary-background"
       data-file="components/ParticleBackground.js"
     />
   );
