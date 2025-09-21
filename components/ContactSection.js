@@ -71,7 +71,7 @@ function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold">Phone</h4>
-                    <p className="text-gray-300">+91 98765 43210</p>
+                    <p className="text-gray-300">+91 9442463994</p>
                   </div>
                 </div>
 
