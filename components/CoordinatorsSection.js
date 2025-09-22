@@ -21,8 +21,8 @@ function CoordinatorsSection() {
 
   const coordinators = {
     faculty: [
-      { name: 'Mrs. Mary Leo Sherlin ', phone: '+91 9344447126', email: 'maryleosherlin@lits.edu.in' },
-      { name: 'Mrs. Haseenath Jaseela ', phone: '+91 9442049657', email: 'haseenathjaseela@lits.edu.in' }
+      { name: 'Mrs. Haseenath Jaseela A', phone: '+91 9442049657', email: 'haseenathjaseela@lits.edu.in' },
+      { name: 'Mrs. Mary Leo Sherlin W', phone: '+91 9344447126', email: 'maryleosherlin@lits.edu.in' }
     ],
     students: [
       { name: 'Mr. Kishore Kumar', phone: '+91 7397638429', email: 'kishorekumar@student.lits.edu.in' },
