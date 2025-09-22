@@ -46,6 +46,7 @@ function App() {
           <EventsSection />
           <ScheduleSection />
           <SpeakersSection />
+          <OrganizersSection />
           <CoordinatorsSection />
           <ContactSection />
         </main>
