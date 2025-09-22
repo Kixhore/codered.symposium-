@@ -65,11 +65,11 @@ function OrganizersSection() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-items-center max-w-5xl mx-auto">
             {organizers.map((organizer, index) => (
               <div
                 key={index}
-                className={`text-center transition-all duration-700 delay-${index * 100} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                className={`text-center w-full max-w-xs transition-all duration-700 delay-${index * 100} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               >
                 <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-2 border-[var(--neon-red)] hover:glow-red transition-all duration-300">
                   <img 
