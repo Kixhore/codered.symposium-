@@ -24,7 +24,7 @@ function AboutSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-[var(--neon-red)]">About</span> <span className="text-white">the Symposium</span>
+            <span className="text-white">About</span> <span className="text-[var(--neon-red)]">the Symposium</span>
           </h2>
           <div className="w-24 h-1 bg-[var(--neon-red)] mx-auto mb-8"></div>
         </div>
