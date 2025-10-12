@@ -23,17 +23,17 @@ function OrganizersSection() {
     {
       name: 'Mrs. Haseenath Jaseela A',
       role: 'Faculty Coordinator',
-      image: ''
+      image: 'https://res.cloudinary.com/dk7bsn6ka/image/upload/v1760273447/WhatsApp_Image_2025-10-11_at_10.27.47_4e1d5a05_oj1k6q.jpg'
     },
     {
       name: 'Mrs. Mary Leo Sherlin W',
       role: 'Faculty Coordinator',
-      image: ''
+      image: 'https://res.cloudinary.com/dk7bsn6ka/image/upload/v1760273448/WhatsApp_Image_2025-10-11_at_10.13.13_c465ff07_g3a4ih.jpg'
     },
     {
       name: 'Dr. Mary Bearly E',
       role: 'Convenor',
-      image: ''
+      image: 'https://res.cloudinary.com/dk7bsn6ka/image/upload/v1760273621/WhatsApp_Image_2025-10-11_at_10.29.35_b35c2290_obq5r5.jpg'
     },
     {
       name: 'Mr. Kishore Kumar',
